@@ -2,6 +2,7 @@
 #define EDITOR_H
 
 #include <QMainWindow>
+#include <QKeyEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class editor; }
@@ -20,5 +21,8 @@ public:
 
 private:
     Ui::editor *ui;
+
+protected:
+    void keyPressEvent(QKeyEvent* event);
 };
 #endif // EDITOR_H
