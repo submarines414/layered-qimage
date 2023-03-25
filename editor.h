@@ -7,6 +7,9 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class editor; }
 QT_END_NAMESPACE
 
+/*!
+ *  the editor class for combining two QImages into a single one.
+ */
 class editor : public QMainWindow
 {
     Q_OBJECT

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/graphics">
+        <file>images/duck_appendages.png</file>
+        <file>images/duck_body.png</file>
+    </qresource>
+</RCC>
