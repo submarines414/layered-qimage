@@ -49,6 +49,7 @@ void Editor::keyPressEvent(QKeyEvent *event)
 void Editor::renderComposite()
 {
     qDebug() << "render triggered";
+    // tried to figure out QPaintBrush for hours before realizing graphicsviews have a grab() function lol
     QPixmap image = ui->graphicsView->grab(ui->graphicsView->sceneRect().toRect());
     ui->post_render->setPixmap(image);
     // bonus: you can save the image >:)
